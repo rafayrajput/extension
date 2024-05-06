@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Blocker",
+    "version": "1.0",
+    "description": "Block annoying ads on web pages.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png"
+      },
+      "default_title": "Ad Blocker",
+      "default_popup": "popup.html"
+    }
+  }
+  
